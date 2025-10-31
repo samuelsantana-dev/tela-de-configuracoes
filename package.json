@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@storybook/vue3-vite": "^10.0.2",
-    "@tailwindcss/cli": "^4.1.16",
+    "@tailwindcss/vite": "^4.1.16",
     "@tanstack/vue-query": "^5.90.5",
     "primeicons": "^7.0.0",
     "primevue": "^4.4.1",
