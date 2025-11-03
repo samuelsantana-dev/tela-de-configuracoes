@@ -1,6 +1,8 @@
 <template>
-  <h2>About VueQuery</h2>
-  <UserProfile />
+  <div class="h-auto">
+    <UserProfile />
+
+  </div>
 </template>
 
 <script setup lang="ts">
