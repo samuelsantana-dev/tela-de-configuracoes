@@ -1,17 +1,16 @@
 <template>
-  <Button icon="pi pi-sun" @click="toggleTheme" />
+  <Button 
+    @click="toggleTheme" 
+    :icon="isDark ? 'pi pi-sun' : 'pi pi-moon'"
+    :label="isDark ? ' Claro' : ' Escuro'"
+    text
+    rounded
+  />
 </template>
 
 <script setup lang="ts">
-import { usePrimeVue } from 'primevue/config';
-const primevue = usePrimeVue();
+import { useTheme } from '../composables/useTheme'
+import Button from 'primevue/button'
 
-function toggleTheme(){
-    const currentTheme = localStorage.getItem('theme') || 'lara-light-blue';
-    const nextTheme = currentTheme.includes('light') ? 'lara-dark-blue' : 'lara-light-blue';
-    import(`primevue/resources/themes/${nextTheme}/theme.css`);
-    localStorage.setItem('theme', nextTheme);
-}
-
+const { isDark, toggleTheme } = useTheme()
 </script>
-

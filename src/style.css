@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.dark body {
+  background-color: #1f2937;
+  color: #f8fafc;
+}
+
+.theme-btn {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+body .theme-btn {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.dark body .theme-btn {
+  background: #374151;
+  color: #f9fafb;
+}
+
+.theme-btn:hover {
+  background: #3b82f6;
+  color: white;
+}
