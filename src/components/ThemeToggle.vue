@@ -5,6 +5,7 @@
     :label="isDark ? ' Claro' : ' Escuro'"
     text
     rounded
+    class="theme-toggle-btn"
   />
 </template>
 
@@ -14,3 +15,9 @@ import Button from 'primevue/button'
 
 const { isDark, toggleTheme } = useTheme()
 </script>
+
+<style scoped>
+.theme-toggle-btn {
+  transition: all 0.3s ease;
+}
+</style>

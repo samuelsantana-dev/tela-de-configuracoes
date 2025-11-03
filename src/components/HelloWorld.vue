@@ -30,7 +30,7 @@ const people = [
       <img class="size-10 rounded-full" :src="person.image" alt="" />
       <div class="ml-3">
         <p class="">{{ person.name }}</p>
-        <p class="text-sm text-gray-500">{{ person.email }}</p>
+        <p class="text-sm ">{{ person.email }}</p>
       </div>
     </li>
   </ul>

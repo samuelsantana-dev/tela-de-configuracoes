@@ -1,38 +1,84 @@
 @import "tailwindcss";
+@import "primeicons/primeicons.css";
+@custom-variant dark (&:where(.app-dark, .app-dark *));
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body {
+.app-dark {
+  color-scheme: dark;
+  background-color: #121212;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1f2937;
+}
+
+p, span, label {
+  color: #6b7280;
+}
+
+div, section, article, main, header, footer {
+  background-color: #ffffff; 
+}
+
+.border, [class*="border"] {
+  border-color: #e5e7eb;
+}
+
+.bg-white {
   background-color: #ffffff;
-  color: #1f2937;
 }
 
-.dark body {
-  background-color: #1f2937;
-  color: #f8fafc;
+.bg-gray-50 {
+  background-color: #f9fafb;
 }
 
-.theme-btn {
-  padding: 0.5rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.375rem;
-  cursor: pointer;
-  transition: all 0.3s;
+.bg-gray-100 {
+  background-color: #f3f4f6;
 }
 
-body .theme-btn {
-  background: #f3f4f6;
-  color: #1f2937;
-}
-
-.dark body .theme-btn {
-  background: #374151;
+.app-dark h1,
+.app-dark h2, 
+.app-dark h3,
+.app-dark h4,
+.app-dark h5,
+.app-dark h6 {
   color: #f9fafb;
 }
 
-.theme-btn:hover {
-  background: #3b82f6;
-  color: white;
+.app-dark p,
+.app-dark span,
+.app-dark label {
+  color: #d1d5db;
+}
+
+.app-dark div,
+.app-dark section,
+.app-dark article, 
+.app-dark main,
+.app-dark header,
+.app-dark footer {
+  background-color: #111827; 
+}
+
+.app-dark .border,
+.app-dark [class*="border"] {
+  border-color: #374151;
+}
+
+.app-dark .bg-white {
+  background-color: #111827; 
+}
+
+.app-dark .bg-gray-50 {
+  background-color: #111827;
+}
+
+.app-dark .bg-gray-100 {
+  background-color: #1f2937; 
 }

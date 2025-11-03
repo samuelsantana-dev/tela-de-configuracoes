@@ -15,18 +15,17 @@
       header="Confirmar Saída"
       :style="{ width: '400px' }"
       :breakpoints="{ '960px': '75vw', '641px': '90vw' }"
-      class="dark:bg-gray-800"
     >
       <div class="flex flex-col items-center text-center space-y-4">
-        <div class="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center">
+        <div class="w-16 h-16  rounded-full flex items-center justify-center">
           <i class="pi pi-exclamation-triangle text-2xl text-red-600 dark:text-red-400"></i>
         </div>
         
         <div class="space-y-2">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+          <h3 class="text-xl font-semibold  ">
            Confirme sua saida
           </h3>
-          <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p class="leading-relaxed">
             Tem certeza que deseja sair da sua conta? 
             Você precisará fazer login novamente para acessar o sistema.
           </p>
@@ -40,7 +39,7 @@
             severity="secondary"
             outlined
             @click="visible = false"
-            class="px-6 py-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
+            class="px-6 py-2 border-gray-300 dark:border-gray-600   hover:bg-gray-50 dark:hover:bg-gray-700"
           />
           <Button
             label="Sair Agora"

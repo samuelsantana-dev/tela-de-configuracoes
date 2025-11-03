@@ -8,15 +8,16 @@ export function useTheme() {
   function applyTheme(isDarkMode: boolean) {
     const html = document.documentElement
     if (isDarkMode) {
-      html.classList.add('dark')
+      html.classList.add('app-dark') 
+      html.classList.add('dark')    
       localStorage.setItem('theme', 'dark')
     } else {
+      html.classList.remove('app-dark')
       html.classList.remove('dark')
       localStorage.setItem('theme', 'light')
     }
 
     PrimeVue.config.theme.options.darkMode = isDarkMode
-    console.log('🎨 Tema aplicado:', isDarkMode ? 'dark' : 'light')
   }
 
   function toggleTheme() {
@@ -25,9 +26,12 @@ export function useTheme() {
   }
 
   onMounted(() => {
-    const saved = localStorage.getItem('theme') === 'dark'
-    isDark.value = saved
-    applyTheme(saved)
+    const saved = localStorage.getItem('theme')
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    
+    const initialTheme = saved === 'dark' || (!saved && prefersDark)
+    isDark.value = initialTheme
+    applyTheme(initialTheme)
   })
 
   return {

@@ -1,20 +1,20 @@
 <template>
   <div class="max-w-4xl">
     <div class="mb-8">
-      <h2 class="text-3xl font-bold text-gray-900 mb-2">Cobrança</h2>
-      <p class="text-gray-600">Gerencie seu plano, faturas e métodos de pagamento</p>
+      <h2 class="text-3xl font-bold  mb-2">Cobrança</h2>
+      <p class="">Gerencie seu plano, faturas e métodos de pagamento</p>
     </div>
 
-    <div class="bg-white rounded-lg shadow-sm border p-6 mb-6">
+    <div class=" rounded-lg shadow-sm border p-6 mb-6">
       <h3 class="text-xl font-semibold mb-4">Plano Atual</h3>
       <div class="flex items-center justify-between">
         <div>
-          <p class="text-lg font-medium text-gray-900">Plano Pro</p>
-          <p class="text-gray-600">R$ 49,90/mês</p>
+          <p class="text-lg font-medium ">Plano Pro</p>
+          <p class="">R$ 49,90/mês</p>
         </div>
         <div class="text-right">
-          <p class="text-sm text-gray-600">Próxima cobrança</p>
-          <p class="font-medium text-gray-900">15/12/2024</p>
+          <p class="text-sm ">Próxima cobrança</p>
+          <p class="font-medium ">15/12/2024</p>
         </div>
       </div>
       <div class="mt-4">
@@ -23,14 +23,14 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-lg shadow-sm border p-6 mb-6">
+    <div class=" rounded-lg shadow-sm border p-6 mb-6">
       <h3 class="text-xl font-semibold mb-4">Método de Pagamento</h3>
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center">
-          <i class="pi pi-credit-card text-2xl text-gray-600 mr-3"></i>
+          <i class="pi pi-credit-card text-2xl  mr-3"></i>
           <div>
-            <p class="font-medium text-gray-900">Cartão de Crédito</p>
-            <p class="text-sm text-gray-600">**** **** **** 4242</p>
+            <p class="font-medium ">Cartão de Crédito</p>
+            <p class="text-sm ">**** **** **** 4242</p>
           </div>
         </div>
         <Button label="Alterar" text class="p-button-sm" />
@@ -41,16 +41,16 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-lg shadow-sm border p-6">
+    <div class=" rounded-lg shadow-sm border p-6">
       <h3 class="text-xl font-semibold mb-4">Histórico de Faturas</h3>
       <div class="space-y-3">
         <div v-for="invoice in invoices" :key="invoice.id" class="flex items-center justify-between py-3 border-b">
           <div>
-            <p class="font-medium text-gray-900">{{ invoice.description }}</p>
-            <p class="text-sm text-gray-600">{{ invoice.date }}</p>
+            <p class="font-medium ">{{ invoice.description }}</p>
+            <p class="text-sm ">{{ invoice.date }}</p>
           </div>
           <div class="text-right">
-            <p class="font-medium text-gray-900">{{ invoice.amount }}</p>
+            <p class="font-medium ">{{ invoice.amount }}</p>
             <Button label="Download" text class="p-button-sm p-button-secondary" />
           </div>
         </div>

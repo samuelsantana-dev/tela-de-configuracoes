@@ -1,15 +1,15 @@
 <template>
   <div class="max-w-4xl">
     <div class="mb-8">
-      <h2 class="text-3xl font-bold text-gray-900 mb-2">Notificações</h2>
-      <p class="text-gray-600">Controle como e quando você recebe notificações</p>
+      <h2 class="text-3xl font-bold  mb-2">Notificações</h2>
+      <p class="">Controle como e quando você recebe notificações</p>
     </div>
 
-    <div class="bg-white rounded-lg shadow-sm border p-6 space-y-6">
+    <div class="rounded-lg shadow-sm border p-6 space-y-6">
       <div class="flex items-center justify-between">
         <div>
-          <p class="font-medium text-gray-700">Notificações por Email</p>
-          <p class="text-sm text-gray-500">Receba atualizações importantes por email</p>
+          <p class="font-medium">Notificações por Email</p>
+          <p class="text-sm ">Receba atualizações importantes por email</p>
         </div>
         <InputSwitch v-model="notifications.email" />
       </div>
@@ -18,8 +18,8 @@
 
       <div class="flex items-center justify-between">
         <div>
-          <p class="font-medium text-gray-700">Notificações Push</p>
-          <p class="text-sm text-gray-500">Receba notificações no seu navegador</p>
+          <p class="font-medium ">Notificações Push</p>
+          <p class="text-sm ">Receba notificações no seu navegador</p>
         </div>
         <InputSwitch v-model="notifications.push" />
       </div>
@@ -28,8 +28,8 @@
 
       <div class="flex items-center justify-between">
         <div>
-          <p class="font-medium text-gray-700">Notificações de Segurança</p>
-          <p class="text-sm text-gray-500">Alertas sobre atividades suspeitas na conta</p>
+          <p class="font-medium ">Notificações de Segurança</p>
+          <p class="text-sm ">Alertas sobre atividades suspeitas na conta</p>
         </div>
         <InputSwitch v-model="notifications.security" />
       </div>
@@ -38,8 +38,8 @@
 
       <div class="flex items-center justify-between">
         <div>
-          <p class="font-medium text-gray-700">Newsletter</p>
-          <p class="text-sm text-gray-500">Receba novidades e atualizações do produto</p>
+          <p class="font-medium ">Newsletter</p>
+          <p class="text-sm ">Receba novidades e atualizações do produto</p>
         </div>
         <InputSwitch v-model="notifications.newsletter" />
       </div>

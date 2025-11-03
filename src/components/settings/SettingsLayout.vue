@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen bg-gray-50 flex">
-    <div class="w-64 bg-white shadow-lg">
+  <div class="min-h-screen flex">
+    <div class="w-64  shadow-lg">
       <div class="p-6 border-b">
-        <h1 class="text-2xl font-bold text-gray-800">Configurações</h1>
+        <h1 class="text-2xl font-bold">Configurações</h1>
       </div>
       <nav class="p-4">
         <ul class="space-y-2">
