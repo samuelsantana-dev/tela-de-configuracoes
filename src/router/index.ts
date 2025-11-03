@@ -2,7 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 // Pages
 import HomePage from '../pages/HomePage.vue';
-import AboutPage from '../pages/VueQuery.vue';
+import VueQuery from '../pages/VueQuery.vue';
 import SettingsPage from '../pages/SettingsPage.vue';
 import ProfileSettings from '../pages/settings/ProfileSettings.vue';
 import SecuritySettings from '../pages/settings/SecuritySettings.vue';
@@ -14,7 +14,7 @@ import NotFoundPage from '../pages/NotFoundPage.vue';
 
 const routes = [
   { path: '/', name: 'Home', component: HomePage },
-  { path: '/vueQuery', name: 'VueQuery', component: AboutPage },
+  { path: '/vueQuery', name: 'VueQuery', component: VueQuery },
    { 
     path: '/settings', 
     component: SettingsPage,
