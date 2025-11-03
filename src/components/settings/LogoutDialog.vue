@@ -18,12 +18,10 @@
       class="dark:bg-gray-800"
     >
       <div class="flex flex-col items-center text-center space-y-4">
-        <!-- Ícone de alerta -->
         <div class="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center">
           <i class="pi pi-exclamation-triangle text-2xl text-red-600 dark:text-red-400"></i>
         </div>
         
-        <!-- Textos -->
         <div class="space-y-2">
           <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
            Confirme sua saida
@@ -55,7 +53,6 @@
       </template>
     </Dialog>
 
-    <!-- Toast para feedback -->
     <Toast />
   </div>
 </template>

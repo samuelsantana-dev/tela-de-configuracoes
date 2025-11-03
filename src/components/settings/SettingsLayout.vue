@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen bg-gray-50 flex">
-    <!-- Sidebar -->
     <div class="w-64 bg-white shadow-lg">
       <div class="p-6 border-b">
         <h1 class="text-2xl font-bold text-gray-800">Configurações</h1>
@@ -23,7 +22,6 @@
       </nav>
     </div>
 
-    <!-- Conteúdo Principal -->
     <div class="flex-1 p-8">
       <router-view />
     </div>
@@ -31,7 +29,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
