@@ -87,7 +87,7 @@ const confirmLogout = async () => {
     })
     
     setTimeout(() => {
-      router.push('/login')
+      router.push('/')
     }, 1000)
     
   } catch (error) {
