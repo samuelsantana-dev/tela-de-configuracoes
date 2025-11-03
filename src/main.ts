@@ -3,6 +3,8 @@ import App from './App.vue';
 import router from './router';
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
+import { QueryClient } from '@tanstack/vue-query'
+import { VueQueryPlugin } from '@tanstack/vue-query'
 import ToastService from 'primevue/toastservice'
 import './style.css';
 
@@ -13,6 +15,17 @@ app.use(PrimeVue, {
         preset: Aura
     }
 });
+
+const queryClient = new QueryClient({
+    defaultOptions: {
+        queries: {
+            retry: 1,
+            refetchOnWindowFocus: false
+        }
+    }
+})
+
+app.use(VueQueryPlugin, { queryClient})
 app.use(ToastService)
 app.use(router); 
 app.mount('#app');
